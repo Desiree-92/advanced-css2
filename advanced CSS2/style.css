@@ -1,0 +1,207 @@
+.parent-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7 {
+  position: relative;
+  padding: 1em;
+}
+
+button {
+  position: absolute;
+  width: 250px;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: opacity .35s ease;
+  transition: opacity .35s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #7e4df1;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 10px 8px #333;
+          box-shadow: 0px 0px 10px 8px #333;
+  z-index: 5;
+}
+
+button section {
+  width: 200px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  background-color: lightcoral;
+}
+
+section:hover {
+  opacity: 0;
+}
+
+.grid2:hover section {
+  opacity: 0;
+}
+
+.grid3:hover section {
+  opacity: 0;
+}
+
+.grid4:hover section {
+  opacity: 0;
+}
+
+.grid5:hover section {
+  opacity: 0;
+}
+
+.grid6:hover section {
+  opacity: 0;
+}
+
+.grid7:hover section {
+  opacity: 0;
+}
+
+.grid1:hover button {
+  opacity: 1;
+}
+
+.grid2:hover button {
+  opacity: 1;
+}
+
+.grid3:hover button {
+  opacity: 1;
+}
+
+.grid4:hover button {
+  opacity: 1;
+}
+
+.grid5:hover button {
+  opacity: 1;
+}
+
+.grid6:hover button {
+  opacity: 1;
+}
+
+.grid7:hover button {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    position: relative;
+  }
+}
+
+html {
+  background: #c3cfe2;
+  font-family: 'indie flower', cursive;
+}
+
+header,
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7 {
+  background: #fff;
+  margin: 50px;
+  border: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px gray;
+          box-shadow: 4px 4px gray;
+}
+
+h1 {
+  padding: 2.3rem;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #b695e1;
+}
+
+nav {
+  text-align: center;
+}
+
+.desiree {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 6px solid #fff;
+}
+
+footer {
+  background: #686de0;
+  margin-top: -70px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+}
+
+.tekst {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+section {
+  -webkit-transition: opacity 900ms ease-in-out;
+  transition: opacity 900ms ease-in-out;
+  opacity: 1;
+}
+
+@media screen and (min-width: 320px) {
+  header,
+  .grid {
+    max-width: 470px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

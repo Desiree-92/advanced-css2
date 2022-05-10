@@ -1,0 +1,49 @@
+.social{
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+    bottom: 10em;
+}
+
+@mixin social {
+    width: 40px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    padding: 0.3em;
+    &::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+    }
+    &::after {
+      padding-left: 1em;
+      font-size: 1em;
+    }
+  }
+
+.fa-laptop-code {
+    content: "\f5fc";
+    @include social();
+}
+
+.blog {
+    background: #e17b77;
+    color: $primaryBtn;
+    width: 20em;
+    position: relative;
+    right: -16em;
+    transition: all 800ms ease-in-out;
+    display: block;
+  
+}
+
+.blog::after {
+    content: "Check out my blog";
+    padding: 1em;
+  }
+  .blog:hover {
+    border-radius: 1em 0 0 1em;
+    transform: translateX(-10em);
+  }
